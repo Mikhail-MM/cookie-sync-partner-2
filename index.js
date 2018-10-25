@@ -22,6 +22,8 @@ app.get('/bidding', (req, res, next) => {
 	})
 });
 
+app.use('/partnerAd', serveStatic(path.join(__dirname, '/ads')))
+
 app.get('*', (req, res) => {
 	console.log("Catch-All Handler")
 	res.status(200).send("All Clear Chief.")
