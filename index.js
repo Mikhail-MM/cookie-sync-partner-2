@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 const uuidv4 = require('uuid/v4');
 const cookieParser = require('cookie-parser')
+const serveStatic = require('serve-static')
 
 const app = express();
 
