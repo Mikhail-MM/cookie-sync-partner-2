@@ -16,7 +16,10 @@ app.use('/*', function(req, res, next) {
 });
 
 app.get('/bidding', (req, res, next) => {
-	res.json({bid: Math.random()})
+	res.json({
+		origin: 'partner-2',
+		bid: Math.random()
+	})
 });
 
 app.get('*', (req, res) => {
