@@ -17,7 +17,7 @@ app.use('/*', function(req, res, next) {
 
 app.get('/bidding', (req, res, next) => {
 	res.json({
-		origin: 'partner-2',
+		origin: 'https://cookie-sync-partner-2.herokuapp.com',
 		bid: Math.random()
 	})
 });
