@@ -13,6 +13,7 @@ app.use('/*', function(req, res, next) {
   res.header("Access-Control-Allow-Headers", "Origin, partner_1_tracking_id, X-Requested-With, Content-Type, Accept, x-audience-tracking-id, x-partner-1-tracking-id, x-contentFocus");
   res.header("Access-Control-Allow-Methods", "POST, GET, OPTIONS, DELETE, PUT");
   res.header("Access-Control-Allow-Credentials", true);
+  console.log('Cookies: ', req.cookies)
   next();
 });
 
